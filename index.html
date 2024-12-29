@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coming Soon - Attrakt Media</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: #000;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+            text-align: center;
+            padding: 10px; /* Add padding for smaller screens */
+        }
+
+        .video-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            z-index: -1;
+        }
+
+        .video-background video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .container {
+            z-index: 1;
+            max-width: 800px;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            color: #e6e6e6;
+        }
+
+        p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            margin-bottom: 30px;
+            color: #cccccc;
+        }
+
+        .highlight {
+            color: #970000;
+            font-weight: 700;
+        }
+        .highlight2 {
+            color: #970000;
+            font-weight: 700;
+            font-size: x-large;
+        }
+
+        .coming-soon {
+            font-size: 1.5rem;
+            font-weight: 400;
+            margin-top: 30px;
+            color: #999;
+        }
+
+        .contact-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 24px;
+            font-size: 1.2rem;
+            color: #fff;
+            background-color: #970000;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .contact-button:hover {
+            background-color: #353535;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+
+            p {
+                font-size: 1rem;
+            }
+
+            .coming-soon {
+                font-size: 1.2rem;
+            }
+
+            .contact-button {
+                font-size: 1rem;
+                padding: 10px 20px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            p {
+                font-size: 0.9rem;
+            }
+
+            .coming-soon {
+                font-size: 1rem;
+            }
+
+            .contact-button {
+                font-size: 0.9rem;
+                padding: 8px 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="video-background">
+        <video autoplay muted loop>
+            <source src="background-video.mp4" type="video/mp4">
+            <img src="img.png" alt="Fallback Background">
+        </video>
+    </div>
+    <div class="container">
+        <h1><span class="highlight">Elevating Influencer Impact.</span></h1>
+        <p>
+            We understand the art of collaboration between creators and brands.<br>
+            The challenges, the negotiations, and the time it takes to make every detail perfect.
+        </p>
+        <p>
+            At <span class="highlight2">Attrakt Media</span>, we don’t just manage influencers — we empower them to amplify their voice and connect authentically with their audience.
+        </p>
+        <p class="coming-soon">Launching Soon</p>
+        <a href="mailto:info@sadn.uk" class="contact-button">Contact Us</a>
+    </div>
+</body>
+</html>
