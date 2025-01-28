@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Coming Soon - Attrakt Media</title>
+  <title>Attrakt Media</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
   <style>
@@ -27,7 +27,7 @@
       position: relative;
     }
     .logo-container {
-      position: absolute;
+      position: fixed;
       top: 20px;
       left: 50%;
       transform: translateX(-50%);
@@ -36,9 +36,10 @@
       padding: 0 20px;
     }
     .logo {
-      max-width: 500px;
+      max-width: 400px;
       width: 100%;
       height: auto;
+      margin-bottom: 100px;
     }
     .video-background {
       position: fixed;
@@ -86,13 +87,13 @@
       bottom: 30px;
       left: 50%;
       transform: translateX(-50%);
-      display: flex;
+      display: flex-center;
       align-items: center;
       gap: 20px;
       width: 90%;
       max-width: 800px;
       padding: 0 20px;
-      margin-left: 70px;
+      
     }
     .social-button {
       display: inline-flex;
@@ -108,6 +109,7 @@
       text-decoration: none;
       cursor: pointer;
       min-width: 140px;
+      border-radius: 200px;
     }
     .social-button:hover {
       background-color: #353535;
@@ -210,14 +212,17 @@
       At <span class="highlight2">Attrakt Media</span>, we don't just help creators thrive — we empower your brand by helping you build impactful campaigns, meticulously connecting you with the right creators best suited for your needs.
     </p>
   </div>
+
   <div class="buttons-container">
-    <a href="https://linkedin.com/company/your-company" class="social-button">
+    <!--<a href="https://linkedin.com/company/your-company" class="social-button">
       <i class="fab fa-linkedin"></i>
-    </a>
-    <span class="status-text">We're making some changes, we'll be back soon!</span>
-    <a href="mailto:info@sadn.uk" class="social-button">
+    </a>-->
+ 
+    <a href="mailto:business@attraktmedia.com" class="social-button">
       <i class="far fa-envelope"></i>
     </a>
   </div>
+  <div>  <span class="status-text">We're making some changes, we'll be back soon!</span></div>
+
 </body>
 </html>
