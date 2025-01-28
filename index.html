@@ -3,162 +3,163 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Coming Soon - Attrakt Media</title>
+  <title>Attrakt Media</title>
   <link
     href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
     rel="stylesheet"
   />
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Roboto', sans-serif;
-            background: #000;
-            color: #fff;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            overflow: hidden;
-            text-align: center;
-            padding: 10px; /* Add padding for smaller screens */
-        }
-
-        .video-background {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            overflow: hidden;
-            z-index: -1;
-        }
-
-        .video-background video {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-
-        .container {
-            z-index: 1;
-            max-width: 800px;
-            padding: 20px;
-        }
-
-        h1 {
-            font-size: 3rem;
-            font-weight: 700;
-            margin-bottom: 20px;
-            color: #e6e6e6;
-        }
-
-        p {
-            font-size: 1.2rem;
-            line-height: 1.6;
-            margin-bottom: 30px;
-            color: #cccccc;
-        }
-
-        .highlight {
-            color: #970000;
-            font-weight: 700;
-        }
-        .highlight2 {
-            color: #970000;
-            font-weight: 700;
-            font-size: x-large;
-        }
-
-        .coming-soon {
-            font-size: 1.5rem;
-            font-weight: 400;
-            margin-top: 30px;
-            color: #999;
-        }
-
-        .contact-button {
-            display: inline-block;
-            margin-top: 20px;
-            padding: 12px 24px;
-            font-size: 1.2rem;
-            color: #fff;
-            background-color: #970000;
-            border: none;
-            border-radius: 5px;
-            text-decoration: none;
-            cursor: pointer;
-        }
-
-        .contact-button:hover {
-            background-color: #353535;
-        }
-
-        @media (max-width: 768px) {
-            h1 {
-                font-size: 2.5rem;
-            }
-
-            p {
-                font-size: 1rem;
-            }
-
-            .coming-soon {
-                font-size: 1.2rem;
-            }
-
-            .contact-button {
-                font-size: 1rem;
-                padding: 10px 20px;
-            }
-        }
-
-        @media (max-width: 480px) {
-            h1 {
-                font-size: 2rem;
-            }
-
-            p {
-                font-size: 0.9rem;
-            }
-
-            .coming-soon {
-                font-size: 1rem;
-            }
-
-            .contact-button {
-                font-size: 0.9rem;
-                padding: 8px 16px;
-            }
-        }
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: 'Roboto', sans-serif;
+      background: #000;
+      color: #fff;
+      min-height: 100vh;
+      overflow-x: hidden;
+      text-align: center;
+    }
+    
+    .header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      padding: 20px;
+      z-index: 2;
+      background: rgba(0, 0, 0, 0.8); /* Added for better logo visibility */
+    }
+    
+    .logo {
+      width: 300px;
+      height: auto;
+      margin: 0 auto;
+    }
+    
+    .logo img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+    
+    .container {
+      z-index: 1;
+      max-width: 800px;
+      padding: 20px;
+      margin: 0 auto;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding-top: 100px; /* Added to prevent content from hiding under header */
+    }
+    
+    h1 {
+      font-size: clamp(2rem, 5vw, 3rem); /* Responsive font size */
+      font-weight: 700;
+      margin-bottom: 20px;
+      color: #e6e6e6;
+      padding: 0 15px; /* Added padding for smaller screens */
+    }
+    
+    p {
+      font-size: clamp(1rem, 3vw, 1.2rem); /* Responsive font size */
+      line-height: 1.6;
+      margin-bottom: 30px;
+      color: #cccccc;
+      padding: 0 15px; /* Added padding for smaller screens */
+    }
+    
+    .highlight {
+      color: #b3b3b3;
+      font-weight: 700;
+    }
+    
+    .highlight2 {
+      color: #b3b3b3;
+      font-weight: 700;
+      font-size: clamp(1.25rem, 4vw, 1.5rem); /* Responsive font size */
+    }
+    
+    .coming-soon {
+      font-size: clamp(1rem, 3vw, 1.5rem); /* Responsive font size */
+      font-weight: 400;
+      margin-top: 30px;
+      color: #999;
+    }
+    
+    .contact-button {
+      display: inline-block;
+      margin-top: 20px;
+      padding: clamp(10px, 2vw, 12px) clamp(20px, 4vw, 24px); /* Responsive padding */
+      font-size: clamp(0.9rem, 2.5vw, 1.2rem); /* Responsive font size */
+      color: #fff;
+      background-color: #443f3f;
+      border: none;
+      border-radius: 5px;
+      text-decoration: none;
+      cursor: pointer;
+      width: fit-content;
+      margin: 20px auto; /* Center the button */
+    }
+    
+    .contact-button:hover {
+      background-color: #353535;
+    }
+    
+    /* Updated media queries */
+    @media (max-width: 768px) {
+      .container {
+        padding-top: 0px; /* Adjusted for smaller header */
+      }
+      
+      .logo {
+        width: 200px; /* More reasonable size for tablets */
+      }
+      
+      br {
+        display: none; /* Remove line breaks on mobile for better text flow */
+      }
+    }
+    
+    @media (max-width: 480px) {
+      .container {
+        padding-top: 70px;
+        padding: 70px 15px 20px 15px; /* Added horizontal padding */
+      }
+      
+      .logo {
+        width: 200px; /* More reasonable size for phones */
+      }
+      
+      .header {
+        padding: 15px;
+      }
+    }
   </style>
 </head>
 <body>
-  <div class="video-background">
-    <video autoplay muted loop playsinline webkit-playsinline>
-      <source src="background-video.mp4" type="video/mp4" />
-      <img src="img.png" alt="Fallback Background" />
-    </video>
-  </div>
+  <header class="header">
+    <div class="logo"><img src="logo.jpeg" alt="Attrakt Media Logo" /></div>
+  </header>
   <div class="container">
-    <h1><span class="highlight">Elevating Influencer Impact.</span></h1>
+    <h1><span class="highlight">Elevating influencer impact</span></h1>
     <p>
       We understand the art of collaboration between creators and brands.
       <br />
-      The challenges, the negotiations, and the time it takes to make every detail
-      perfect.
+      The challenges, negotiations, and the time it takes to make every detail
+      perfect - we handle it all.
     </p>
     <p>
-      At <span class="highlight2">Attrakt Media</span>, we don’t just manage
-      influencers — we empower them to amplify their voice and connect authentically
-      with their audience.
+      At <span class="highlight2">Attrakt Media</span>, we don't just help creators thrive — 
+      we empower your brand by helping you build impactful campaigns, meticulously connecting 
+      you with the right creators best suited for your needs.
     </p>
-    <p class="coming-soon">Launching Soon</p>
-    <a href="mailto:info@sadn.uk" class="contact-button">Contact Us</a>
+    <a href="mailto:business@attraktmedia.com" class="contact-button">Contact Us</a>
   </div>
 </body>
 </html>
