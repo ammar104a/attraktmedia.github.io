@@ -3632,17 +3632,25 @@ footer .row {
 }
 
 
+/* Desktop styling */
 .newheadingsbyammar {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 50rem; /* Uses rem units for responsive spacing */
+    gap: 50rem; /* a more reasonable gap on larger screens */
   }
   
   .newheadingsbyammar h3 {
     color: #930606;
     font-style: italic;
     margin: 0;
+  }
+  
+  /* Mobile adjustments */
+  @media only screen and (max-width: 600px) {
+    .newheadingsbyammar {
+        display: none;
+    }
   }
   
 
